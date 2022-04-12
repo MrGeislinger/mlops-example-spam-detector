@@ -11,7 +11,9 @@
 
 ## GCP
 
-> Make sure you have a GCP project setup already
+> Make sure you have a GCP project setup already.
+>
+> Also may need to authenticate before pushing Docker image: https://cloud.google.com/container-registry/docs/advanced-authentication#gcloud-helper
 
 ### Cloud Run
 
@@ -20,7 +22,7 @@
 * `docker tag spam-detector-image gcr.io/{PROJECT_ID}/spam-detector:vX`
 * (Best if Docker image pushed to Google Cloud Registry - GCR)
     - (Allow for connection of Docker to GCR)
-    - `docker push gcr.io/{PROJECT_ID}/spam-detector:v2` (note `gcr.io` is based on region)
+    - `docker push gcr.io/{PROJECT_ID}/spam-detector:vX` (note `gcr.io` is based on region)
         - https://support.terra.bio/hc/en-us/articles/360035638032-Publish-a-Docker-container-image-to-Google-Container-Registry-GCR-
         - https://cloud.google.com/container-registry/docs/advanced-authentication#console_2
 * Create service in Cloud Run
