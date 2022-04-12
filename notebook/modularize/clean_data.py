@@ -54,8 +54,8 @@ if __name__ == '__main__':
     y_train_clean = get_clean_labels(y_train, ham='ham')
     y_test_clean = get_clean_labels(y_test, ham='ham')
     
-    # Save data to files - Note data are Series
-    np.save(f'X_train_clean', X_train_clean)
-    np.save(f'y_train_clean', y_train_clean)
-    np.save(f'X_test_clean', X_test_clean)
-    np.save(f'y_test_clean', y_test_clean)
+    # Save data to files - Note data are Series saved with numpy
+    np.save(f'X_train', X_train_clean)
+    np.save(f'y_train', y_train_clean)
+    np.save(f'X_test', X_test_clean)
+    np.save(f'y_test', y_test_clean)
