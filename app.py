@@ -17,7 +17,7 @@ def clean_message(message: str):
 
 ###### UI
 
-st.title('Spam Detection')
+st.title('Spam Detection (v2)')
 
 # Enter potential spam message to submit
 with st.form('message_form'):
@@ -36,7 +36,7 @@ with st.form('message_form'):
         with placeholder_message.container():
              # load model
             st.write('Loading model & preparing to make prediction...')
-            model = load_model('model.joblib')
+            model = load_model('model_v2.joblib')
             time.sleep(0.5)
             
             # Prepare data

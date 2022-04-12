@@ -16,7 +16,7 @@ COPY SimpleModel.py SimpleModel.py
 COPY app.py app.py
 
 # Model
-COPY model.joblib model.joblib
+COPY model_v2.joblib model_v2.joblib
 
 WORKDIR .
 
