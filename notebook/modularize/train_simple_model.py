@@ -13,6 +13,8 @@ common_spam_words = (
     'won',
     'win', # variation of "win"
     'money',
+    'dumb', # added in v2
+    'silly', # added in v2
 )
 
 if __name__ == '__main__':
