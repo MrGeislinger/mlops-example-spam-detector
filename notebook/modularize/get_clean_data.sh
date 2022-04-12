@@ -5,5 +5,5 @@ echo
 echo 'Splitting data into train & test X & y sets...'
 python train_test_split.py -d data.csv
 echo
-echo 'Cleaning training and training data...'
+echo 'Cleaning training and testing data...'
 python clean_data.py
